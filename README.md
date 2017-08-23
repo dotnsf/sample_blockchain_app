@@ -26,10 +26,13 @@ Sample blockchain application which use Hyperledger Fabric v1.0 and Hyperledger 
 
 - Install Fabric support tools
 
-`$ mkdir <working directory>
-$ cd <working directory>
-$ curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.zip
-$ unzip fabric-dev-servers.zip`
+`$ mkdir <working directory>`
+
+`$ cd <working directory>`
+
+`$ curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.zip`
+
+`$ unzip fabric-dev-servers.zip`
 
 ### Hyperledger Fabric v1.0
 
@@ -55,19 +58,27 @@ $ unzip fabric-dev-servers.zip`
 
 `$ ./composer.sh`
 
-### Application clone/download
+### Application
 
-- $ git clone https://github.com/dotnsf/xxx
+- Clone/Download application from github.com
 
-- $ cd xxx
+`$ git clone https://github.com/dotnsf/sample_blockchain_app`
 
-### Deploy Hyperledger Business Network
+`$ cd sample_blockchain_app`
 
-- $ composer network deploy -p hlfv1 -a ./jugeme-samplenetwork.bna -i PeerAdmin -s secret
+### Hyperledger Business Network
 
-### Launch applition
+- Deploy Hyperledger Business Network
 
-- $ node app
+`$ composer network deploy -p hlfv1 -a ./jugeme-samplenetwork.bna -i PeerAdmin -s secret`
+
+### Launch
+
+- Launch application
+
+`$ node app`
+
+### Enjoy!
 
 ## Licensing
 
