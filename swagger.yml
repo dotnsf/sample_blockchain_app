@@ -1,0 +1,89 @@
+swagger: '2.0'
+
+info:
+  version: '0.0.1'
+  title: 'Juge.Me Sample Network Swagger'
+  contact:
+    email: 'dotnsf@gmail.com'
+  license:
+    name: 'MIT'
+host: 'dotnsf-samplenetwork.eu-de.mybluemix.net'
+basePath: ''
+tags:
+- name: 'user'
+  description: 'API for Users'
+- name: 'item'
+  description: 'API for Items'
+schemes:
+- 'http'
+paths:
+  /users:
+    get:
+      tags:
+      - 'users'
+      summary: 'Get all users'
+      description: ''
+      operationId: 'getUsers'
+      consumes:
+      - 'application/json'
+      produces:
+      - 'application/json'
+      responses:
+        200:
+          description: 'successful operation'
+  /user:
+    get:
+      tags:
+      - 'user'
+      summary: 'Get specified user'
+      description: ''
+      operationId: 'getUser'
+      consumes:
+      - 'application/json'
+      produces:
+      - 'application/json'
+      parameters:
+      - name: 'id'
+        in: 'query'
+        description: 'ID for user to return'
+        required: true
+        type: 'text'
+      responses:
+        200:
+          description: 'successful operation'
+  /items:
+    get:
+      tags:
+      - 'items'
+      summary: 'Get all items'
+      description: ''
+      operationId: 'getItems'
+      consumes:
+      - 'application/json'
+      produces:
+      - 'application/json'
+      responses:
+        200:
+          description: 'successful operation'
+  /item:
+    get:
+      tags:
+      - 'item'
+      summary: 'Get specified item'
+      description: ''
+      operationId: 'getItem'
+      consumes:
+      - 'application/json'
+      produces:
+      - 'application/json'
+      parameters:
+      - name: 'id'
+        in: 'query'
+        description: 'ID for item to return'
+        required: true
+        type: 'text'
+      responses:
+        200:
+          description: 'successful operation'
+    
+
